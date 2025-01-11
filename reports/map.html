@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3d8fe08c6eab31010c30c6bc98c29303 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3d8fe08c6eab31010c30c6bc98c29303" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3d8fe08c6eab31010c30c6bc98c29303 = L.map(
+                "map_3d8fe08c6eab31010c30c6bc98c29303",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_59e37ebf18b4bfec2a33f64cccc140ad = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_59e37ebf18b4bfec2a33f64cccc140ad.addTo(map_3d8fe08c6eab31010c30c6bc98c29303);
+        
+    
+            var marker_444678cb9fa6c9964caf8b459ebdf6e0 = L.marker(
+                [48.4827, 135.0838],
+                {
+}
+            ).addTo(map_3d8fe08c6eab31010c30c6bc98c29303);
+        
+    
+        var popup_b877a65d368d9763c1c02ec2ee64b800 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_500a16a84fa11b028388b4f23e0f6173 = $(`<div id="html_500a16a84fa11b028388b4f23e0f6173" style="width: 100.0%; height: 100.0%;">94.25.1.1 (Khabarovsk, RU)</div>`)[0];
+                popup_b877a65d368d9763c1c02ec2ee64b800.setContent(html_500a16a84fa11b028388b4f23e0f6173);
+            
+        
+
+        marker_444678cb9fa6c9964caf8b459ebdf6e0.bindPopup(popup_b877a65d368d9763c1c02ec2ee64b800)
+        ;
+
+        
+    
+    
+            var marker_b27111c23846d21420be65ebb1e83d46 = L.marker(
+                [39.0339, 125.7543],
+                {
+}
+            ).addTo(map_3d8fe08c6eab31010c30c6bc98c29303);
+        
+    
+        var popup_9a92ac3a9e2cca612eb707add70c1c7d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d892cbec239112ef039452554ed1f9ec = $(`<div id="html_d892cbec239112ef039452554ed1f9ec" style="width: 100.0%; height: 100.0%;">175.45.178.1 (Pyongyang, KP)</div>`)[0];
+                popup_9a92ac3a9e2cca612eb707add70c1c7d.setContent(html_d892cbec239112ef039452554ed1f9ec);
+            
+        
+
+        marker_b27111c23846d21420be65ebb1e83d46.bindPopup(popup_9a92ac3a9e2cca612eb707add70c1c7d)
+        ;
+
+        
+    
+    
+            var marker_636cff92a1c6984788980b90e06954de = L.marker(
+                [31.2222, 121.4581],
+                {
+}
+            ).addTo(map_3d8fe08c6eab31010c30c6bc98c29303);
+        
+    
+        var popup_2877af1abf4b9a14624fb39e265ba129 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_48495e50bf10754ec37989c84c4b8a1b = $(`<div id="html_48495e50bf10754ec37989c84c4b8a1b" style="width: 100.0%; height: 100.0%;">60.12.34.56 (Shanghai, CN)</div>`)[0];
+                popup_2877af1abf4b9a14624fb39e265ba129.setContent(html_48495e50bf10754ec37989c84c4b8a1b);
+            
+        
+
+        marker_636cff92a1c6984788980b90e06954de.bindPopup(popup_2877af1abf4b9a14624fb39e265ba129)
+        ;
+
+        
+    
+</script>
+</html>

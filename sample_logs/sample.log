@@ -1,0 +1,38 @@
+Jan 10 20:30:45 server sshd[12345]: Failed password for invalid user admin from 192.168.1.100 port 22 ssh2
+Jan 10 20:31:05 server sshd[12346]: Failed password for invalid user root from 192.168.1.100 port 22 ssh2
+Jan 10 20:31:25 server sshd[12347]: Failed password for invalid user guest from 192.168.1.100 port 22 ssh2
+Jan 10 20:32:05 server sshd[12348]: Failed password for invalid user test from 192.168.1.100 port 22 ssh2
+Jan 10 20:32:25 server sshd[12349]: Failed password for invalid user user from 192.168.1.100 port 22 ssh2
+Jan 10 20:30:45 server sshd[12345]: Failed password for invalid user admin from 94.25.1.1 port 22 ssh2
+Jan 10 20:32:10 server sshd[12346]: Failed password for invalid user root from 175.45.178.1 port 22 ssh2
+Jan 10 20:34:05 server sshd[12347]: Failed password for invalid user test from 60.12.34.56 port 22 ssh2
+Jan 10 20:30:45 server sshd[12345]: Failed password for invalid user admin from 192.168.1.100 port 22 ssh2
+Jan 10 20:32:10 server sshd[12346]: Failed password for invalid user root from 192.168.1.101 port 22 ssh2
+Jan 10 20:34:05 server sshd[12347]: Failed password for invalid user test from 192.168.1.100 port 22 ssh2
+Jan 10 03:00:45 server sshd[12345]: Failed password for invalid user admin from 192.168.1.100 port 22 ssh2
+Jan 10 03:15:10 server sshd[12346]: Failed password for invalid user root from 192.168.1.101 port 22 ssh2
+Jan 10 04:34:05 server sshd[12347]: Failed password for invalid user test from 192.168.1.102 port 22 ssh2
+Random text that does not follow the log format
+Another random line
+Jan 10 20:30:45 This line is partially correct
+Jan 10 20:30:45 server sshd[12345]: Failed password for invalid user admin from 192.168.1.100 port 22 ssh2
+Jan 10 20:30:45 server sshd[12345]: Failed password for invalid user admin from 192.168.1.100 port 22 ssh2
+Jan 10 20:30:45 server sshd[12345]: Failed password for invalid user admin from 192.168.1.100 port 22 ssh2
+Jan 10 20:30:45 server sshd[12345]: Failed password for invalid user admin from 300.300.300.300 port 22 ssh2
+Jan 10 20:31:10 server sshd[12346]: Failed password for invalid user root from abc.def.ghi.jkl port 22 ssh2
+Jan 10 20:40:45 server sshd[12345]: Failed password for invalid user admin from 192.168.1.105 port 22 ssh2
+Jan 10 20:41:10 server sshd[12346]: Failed password for invalid user test from 192.168.1.106 port 22 ssh2
+Jan 10 20:30:45 server sshd[12345]: Failed password for invalid user admin from 192.168.1.150 port 22 ssh2
+Jan 10 20:32:10 server sshd[12346]: Failed password for invalid user root from 192.168.1.150 port 22 ssh2
+Jan 10 20:34:05 server sshd[12347]: Failed password for invalid user guest from 192.168.1.150 port 22 ssh2
+with open("large_sample.log", "w") as file:
+    for i in range(10000):
+        file.write(f"Jan 10 20:30:45 server sshd[12345]: Failed password for invalid user admin from 192.168.1.{i % 255} port 22 ssh2\n")
+with open("large_sample.log", "w") as file:
+    for i in range(1000000):
+        file.write(f"Jan 10 20:30:45 server sshd[12345]: Failed password for invalid user admin from 192.168.1.{i % 255} port 22 ssh2\n")
+Jan 10 2025 20:30:45 server sshd[12345]: Failed password for invalid user admin from 192.168.1.100 port 22 ssh2
+2025-01-10T20:30:45 server sshd[12346]: Failed password for invalid user root from 192.168.1.101 port 22 ssh2
+Jan 10 20:30:45 server sshd[12345]: Failed password for invalid user admin from 192.168.1.250 port 22 ssh2
+Jan 10 20:31:05 server sshd[12346]: Failed password for invalid user root from 192.168.1.250 port 22 ssh2
+Jan 10 20:31:25 server sshd[12347]: Failed password for invalid user test from 192.168.1.250 port 22 ssh2
